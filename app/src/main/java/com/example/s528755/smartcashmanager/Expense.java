@@ -18,4 +18,7 @@ public class Expense extends AppCompatActivity {
         startActivity(intent);
         Toast.makeText(getApplicationContext(), "Expense Added " , Toast.LENGTH_LONG).show();
     }
+    public void Image(View view) {
+Toast.makeText(getApplicationContext(), "Not Implemented yet ", Toast.LENGTH_LONG).show();
+    }
 }
