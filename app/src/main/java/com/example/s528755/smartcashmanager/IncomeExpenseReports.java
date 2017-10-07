@@ -1,9 +1,11 @@
 package com.example.s528755.smartcashmanager;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 
 import com.github.mikephil.charting.charts.PieChart;
 import com.github.mikephil.charting.components.Legend;
@@ -42,6 +44,11 @@ public class IncomeExpenseReports extends AppCompatActivity {
         addDataSet(pieChart);
 
     }
+    public void Back(View view) {
+        Intent intent = new Intent(this, Reports.class);
+        startActivity(intent);
+    }
+
 
     private void addDataSet(PieChart pieChart) {
         Log.d(Tag,"addDataSet started");
