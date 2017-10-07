@@ -13,22 +13,18 @@ public class Reports extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reports);
-        Spinner spin = (Spinner) findViewById(R.id.spinner);
-        String[] items = new String[]{"Select type of report","Income Reports", "Expense Reports"};
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, items);
-        spin.setAdapter(adapter);
 
     }
     public void Income(View view) {
-        Intent intent = new Intent(this, Register.class);
+        Intent intent = new Intent(this, IncomeReports.class);
         startActivity(intent);
     }
     public void Expense(View view) {
-        Intent intent = new Intent(this, Register.class);
+        Intent intent = new Intent(this, ExpenseReports.class);
         startActivity(intent);
     }
     public void IE(View view) {
-        Intent intent = new Intent(this, Register.class);
+        Intent intent = new Intent(this, IncomeExpenseReports.class);
         startActivity(intent);
     }
 

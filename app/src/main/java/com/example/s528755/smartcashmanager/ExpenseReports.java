@@ -13,11 +13,11 @@ import com.github.mikephil.charting.data.PieEntry;
 
 import java.util.ArrayList;
 
-public class IncomeReports extends AppCompatActivity {
+public class ExpenseReports extends AppCompatActivity {
 
-    private static  String Tag = "Income Reports";
-    private float[] yData ={25.3f,10.6f,66.76f};
-    private String[] xData ={"Salary","Rent from property","Business Income"};
+    private static  String Tag = "Expense Reports";
+    private float[] yData ={25.3f,10.6f,66.76f,18.6f,6.76f,7.8f};
+    private String[] xData ={"Rent","Food","Travel","Entertainment","Medical","Miscellaneous"};
     PieChart pieChart;
 
 
@@ -27,7 +27,7 @@ public class IncomeReports extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_income_reports);
+        setContentView(R.layout.activity_expense_reports);
         Log.d(Tag,"onCreate:starting to create chart");
 
         pieChart = (PieChart) findViewById(R.id.pie);
@@ -35,7 +35,7 @@ public class IncomeReports extends AppCompatActivity {
         pieChart.setRotationEnabled(true);
         pieChart.setHoleRadius(25f);
         pieChart.setTransparentCircleAlpha(0);
-        pieChart.setCenterText("Income Chart");
+        pieChart.setCenterText("Expense Chart");
         pieChart.setCenterTextSize(10);
         pieChart.setDrawEntryLabels(true);
 
@@ -55,9 +55,9 @@ public class IncomeReports extends AppCompatActivity {
             xEntrys.add(xData[i]);
         }
 
-        PieDataSet pieDataSet = new PieDataSet(yEntrys,"Income");
-        pieDataSet.setSliceSpace((2));
-        pieDataSet.setValueTextSize(12);
+        PieDataSet pieDataSet = new PieDataSet(yEntrys,"Expense");
+        pieDataSet.setSliceSpace((3));
+        pieDataSet.setValueTextSize(10);
 
         ArrayList<Integer> colors = new ArrayList<>();
         colors.add(Color.GRAY);

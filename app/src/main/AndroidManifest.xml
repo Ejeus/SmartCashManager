@@ -21,7 +21,9 @@
         <activity android:name=".Expense" />
         <activity android:name=".Income" />
         <activity android:name=".Reports" />
-        <activity android:name=".IncomeReports"></activity>
+        <activity android:name=".IncomeReports" />
+        <activity android:name=".ExpenseReports" />
+        <activity android:name=".IncomeExpenseReports"></activity>
     </application>
 
 </manifest>

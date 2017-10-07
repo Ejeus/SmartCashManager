@@ -13,11 +13,11 @@ import com.github.mikephil.charting.data.PieEntry;
 
 import java.util.ArrayList;
 
-public class IncomeReports extends AppCompatActivity {
+public class IncomeExpenseReports extends AppCompatActivity {
 
     private static  String Tag = "Income Reports";
-    private float[] yData ={25.3f,10.6f,66.76f};
-    private String[] xData ={"Salary","Rent from property","Business Income"};
+    private float[] yData ={25.3f,10.6f};
+    private String[] xData ={"Income","Expense"};
     PieChart pieChart;
 
 
@@ -55,7 +55,7 @@ public class IncomeReports extends AppCompatActivity {
             xEntrys.add(xData[i]);
         }
 
-        PieDataSet pieDataSet = new PieDataSet(yEntrys,"Income");
+        PieDataSet pieDataSet = new PieDataSet(yEntrys,"Income-Expense");
         pieDataSet.setSliceSpace((2));
         pieDataSet.setValueTextSize(12);
 
