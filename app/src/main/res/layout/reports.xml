@@ -14,33 +14,33 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <Button
-                android:textColor="@color/darkbrown"
-                android:padding="5dp"
-                android:background="@drawable/edittext_back"
-                android:id="@+id/expensereports"
-                android:text="Income Reports"
+            <!--<Button-->
+                <!--android:textColor="@color/darkbrown"-->
+                <!--android:padding="5dp"-->
+                <!--android:background="@drawable/edittext_back"-->
+                <!--android:id="@+id/expensereports"-->
+                <!--android:text="Income Reports"-->
 
-                android:layout_width="100dp"
-                android:layout_height="100dp"/>
-            <Button
-                android:textColor="@color/darkbrown"
-                android:padding="5dp"
-                android:background="@drawable/edittext_back"
-                android:id="@+id/incomereports"
+                <!--android:layout_width="100dp"-->
+                <!--android:layout_height="100dp"/>-->
+            <!--<Button-->
+                <!--android:textColor="@color/darkbrown"-->
+                <!--android:padding="5dp"-->
+                <!--android:background="@drawable/edittext_back"-->
+                <!--android:id="@+id/incomereports"-->
 
-                android:text="Income Reports"
-                android:layout_width="100dp"
-                android:layout_height="100dp"/>
-            <Button
-                android:textColor="@color/darkbrown"
-                android:padding="5dp"
-                android:background="@drawable/edittext_back"
+                <!--android:text="Income Reports"-->
+                <!--android:layout_width="100dp"-->
+                <!--android:layout_height="100dp"/>-->
+            <!--<Button-->
+                <!--android:textColor="@color/darkbrown"-->
+                <!--android:padding="5dp"-->
+                <!--android:background="@drawable/edittext_back"-->
 
-                android:id="@+id/income-expensereports"
-                android:text="Income-Expense Reports"
-                android:layout_width="100dp"
-                android:layout_height="100dp"/>
+                <!--android:id="@+id/income-expensereports"-->
+                <!--android:text="Income-Expense Reports"-->
+                <!--android:layout_width="100dp"-->
+                <!--android:layout_height="100dp"/>-->
 
             <TextView
                 android:textColor="@color/darkbrown"
