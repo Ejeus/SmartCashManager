@@ -10,7 +10,7 @@ Smart Cash Manager
 
 ### How do I get set up? ###
 
-* Summary of set up
+* Requires minimum API level 23
 * Configuration
 * Dependencies
 * Database configuration
