@@ -7,7 +7,8 @@
     <TableLayout
         android:layout_margin="20dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:id="@+id/tableLayout">
 
         <TableRow
             android:layout_width="match_parent"
@@ -148,43 +149,50 @@
             android:layout_height="match_parent" >
 
             <LinearLayout
-                android:orientation="vertical"
                 android:layout_width="0dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:layout_height="match_parent">
+                android:orientation="vertical">
 
                 <TextView
-                    android:textColor="@color/lightbrown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:text="Time"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:textColor="@color/lightbrown" />
 
                 <TextView
-                    android:padding="5dp"
-                    android:background="@drawable/edittext_back"
                     android:id="@+id/itime"
-                    android:layout_marginTop="5dp"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext_back"
+                    android:padding="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
                 <TextView
-                    android:visibility="invisible"
                     android:id="@+id/eamt_h"
-                    android:textColor="@color/lightbrown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:text="Amount"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-                <Button
-                    android:textSize="20dp"
-                    android:textColor="@color/darkbrown"
-                    android:background="@drawable/edittext_back"
-                    android:text="Add Image"
+                    android:textColor="@color/lightbrown"
+                    android:visibility="invisible" />
 
+
+
+
+                <Button
+                    android:id="@+id/incomePhoto"
+                    android:layout_width="181dp"
                     android:layout_height="wrap_content"
-                    android:id="@+id/addimage"
-                    android:layout_width="match_parent" />
+                    android:text="Select Photo" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
 
             </LinearLayout>
         </TableRow>
@@ -216,4 +224,5 @@
                 android:id="@+id/iclear" />
         </TableRow>
     </TableLayout>
+
 </RelativeLayout>

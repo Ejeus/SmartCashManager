@@ -207,18 +207,21 @@
             <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="match_parent"></LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="match_parent">
+
                 <Button
-                    android:textSize="20dp"
-
-                    android:textColor="@color/darkbrown"
-                    android:background="@drawable/edittext_back"
-                    android:text="Add Image"
+                    android:id="@+id/expensePhoto"
+                    android:layout_width="150dp"
                     android:layout_height="wrap_content"
-                    android:id="@+id/addimage"
-                    android:layout_width="match_parent" />
-
+                    android:onClick="images"
+                    android:text="Select Photo" />
 
             </LinearLayout>
         </TableRow>

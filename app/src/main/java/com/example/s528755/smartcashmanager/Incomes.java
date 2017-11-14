@@ -43,7 +43,6 @@ public class Incomes extends Fragment {
         uid=sp.getString("uid","");
         list= (ListView) v.findViewById(R.id.ilist);
         ray= (RelativeLayout) v.findViewById(R.id.incomeray);
-        btnLoad=(Button)v.findViewById(R.id.btnLoad);
         ivImage=(ImageView)v.findViewById(R.id.imageView1);
         spin = (Spinner) v.findViewById(R.id.income_spin);
         ArrayAdapter<String> a = new ArrayAdapter<String>(getActivity(), R.layout.spin_item, R.id.spin_txt, spindata);
@@ -80,11 +79,7 @@ public class Incomes extends Fragment {
         {
             list.setVisibility(View.GONE);
             Toast.makeText(getActivity(), "No Incomes have Added!", Toast.LENGTH_SHORT).show();
-//            Snackbar snack=Snackbar.make(ray,"No Incomes have Added!",Snackbar.LENGTH_SHORT);
-//            View vs=snack.getView();
-//            TextView txt= (TextView) vs.findViewById(android.support.design.R.id.snackbar_text);
-//            txt.setTextColor(Color.GREEN);
-//            snack.show();
+
         }
         else
         {
