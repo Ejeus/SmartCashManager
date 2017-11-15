@@ -155,15 +155,12 @@
                 android:orientation="vertical">
 
                 <TextView
-<<<<<<< HEAD
                     android:textColor="@color/lightviolet"
-=======
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
->>>>>>> fb308e5c4aad434dc940dd819f418a71b669874a
                     android:layout_marginLeft="5dp"
                     android:text="Time"
-                    android:textColor="@color/lightbrown" />
+                     />
 
                 <TextView
                     android:id="@+id/itime"
@@ -176,26 +173,24 @@
 
                 <TextView
                     android:id="@+id/eamt_h"
-<<<<<<< HEAD
                     android:textColor="@color/lightviolet"
                     android:layout_marginLeft="5dp"
                     android:text="Amount"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
-                <Button
-                    android:textSize="20dp"
-                    android:textColor="@color/darkviolet"
-                    android:background="@drawable/edittext_back"
-                    android:text="Add Image"
-=======
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:text="Amount"
-                    android:textColor="@color/lightbrown"
-                    android:visibility="invisible" />
+                <!--<Button-->
+                    <!--android:textSize="20dp"-->
+                    <!--android:textColor="@color/darkviolet"-->
+                    <!--android:background="@drawable/edittext_back"-->
+                    <!--android:text="Add Image"-->
 
->>>>>>> fb308e5c4aad434dc940dd819f418a71b669874a
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="5dp"-->
+                    <!--android:text="Amount"-->
+                    <!--android:textColor="@color/lightbrown"-->
+                    <!--android:visibility="invisible" />-->
+
 
 
 
