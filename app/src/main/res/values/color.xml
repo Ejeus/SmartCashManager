@@ -4,8 +4,8 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
 
-    <color name="lightbrown">#a13939</color>
-    <color name="darkbrown">#7a2b23</color>
+    <color name="lightviolet">#C861F3</color>
+    <color name="darkviolet">#8E44AD</color>
 
     <color name="incomes">#599ef7</color>
     <color name="expenses">#274b79</color>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:background="@drawable/background"
+
     android:id="@+id/chartray"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -44,7 +44,7 @@
                 <!--android:layout_height="100dp"/>-->
 
             <TextView
-                android:textColor="@color/darkbrown"
+                android:textColor="@color/darkviolet"
                 android:text="2017-09-25 - 2017-10-27"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="10dp"
@@ -87,7 +87,7 @@
         android:layout_height="match_parent">
 
         <Button
-            android:textColor="@color/darkbrown"
+            android:textColor="@color/darkviolet"
             android:padding="5dp"
             android:background="@drawable/edittext_back"
             android:id="@+id/selectdate"

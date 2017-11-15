@@ -110,7 +110,7 @@ public class Login extends AppCompatActivity
                             break;
                         case MotionEvent.ACTION_DOWN:
                             signup.setBackgroundResource(R.drawable.edittext_back);
-                            signup.setTextColor(getResources().getColor(R.color.darkbrown));
+                            signup.setTextColor(getResources().getColor(R.color.darkviolet));
                             break;
                     }
                     return false;
@@ -131,7 +131,7 @@ public class Login extends AppCompatActivity
                             break;
                         case MotionEvent.ACTION_DOWN:
                             signin.setBackgroundResource(R.drawable.edittext_back);
-                            signin.setTextColor(getResources().getColor(R.color.darkbrown));
+                            signin.setTextColor(getResources().getColor(R.color.darkviolet));
                             break;
                     }
                     return false;

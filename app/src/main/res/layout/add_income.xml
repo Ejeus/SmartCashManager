@@ -23,14 +23,14 @@
                 <TextView
                     android:visibility="invisible"
                     android:id="@+id/isrc_h"
-                    android:textColor="@color/lightbrown"
+                    android:textColor="@color/lightviolet"
                     android:layout_marginLeft="5dp"
                     android:text="Source of Income"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
 
                 <EditText
-                    android:textColorHint="@color/lightbrown"
+                    android:textColorHint="@color/lightviolet"
                     android:layout_marginTop="5dp"
                     android:padding="5dp"
                     android:background="@drawable/edittext_back"
@@ -57,14 +57,14 @@
                 <TextView
                     android:visibility="invisible"
                     android:id="@+id/iamt_h"
-                    android:textColor="@color/lightbrown"
+                    android:textColor="@color/lightviolet"
                     android:layout_marginLeft="5dp"
                     android:text="Amount"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
 
                 <EditText
-                    android:textColorHint="@color/lightbrown"
+                    android:textColorHint="@color/lightviolet"
                     android:layout_marginTop="5dp"
                     android:padding="5dp"
                     android:background="@drawable/edittext_back"
@@ -93,14 +93,14 @@
                 <TextView
                     android:visibility="invisible"
                     android:id="@+id/itype_h"
-                    android:textColor="@color/lightbrown"
+                    android:textColor="@color/lightviolet"
                     android:layout_marginLeft="5dp"
                     android:text="Mode of Income"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
 
                 <EditText
-                    android:textColorHint="@color/lightbrown"
+                    android:textColorHint="@color/lightviolet"
                     android:padding="5dp"
                     android:background="@drawable/edittext_back"
                     android:id="@+id/itype"
@@ -124,7 +124,7 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:textColor="@color/lightbrown"
+                    android:textColor="@color/lightviolet"
                     android:layout_marginLeft="5dp"
                     android:text="Date"
                     android:layout_width="match_parent"
@@ -154,7 +154,7 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:textColor="@color/lightbrown"
+                    android:textColor="@color/lightviolet"
                     android:layout_marginLeft="5dp"
                     android:text="Time"
                     android:layout_width="match_parent"
@@ -171,14 +171,14 @@
                 <TextView
                     android:visibility="invisible"
                     android:id="@+id/eamt_h"
-                    android:textColor="@color/lightbrown"
+                    android:textColor="@color/lightviolet"
                     android:layout_marginLeft="5dp"
                     android:text="Amount"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
                 <Button
                     android:textSize="20dp"
-                    android:textColor="@color/darkbrown"
+                    android:textColor="@color/darkviolet"
                     android:background="@drawable/edittext_back"
                     android:text="Add Image"
 
@@ -196,7 +196,7 @@
 
             <Button
                 android:textSize="20dp"
-                android:textColor="@color/darkbrown"
+                android:textColor="@color/darkviolet"
                 android:background="@drawable/edittext_back"
                 android:layout_marginRight="10dp"
                 android:text="Save"
@@ -207,7 +207,7 @@
 
             <Button
                 android:textSize="20dp"
-                android:textColor="@color/darkbrown"
+                android:textColor="@color/darkviolet"
                 android:background="@drawable/edittext_back"
                 android:text="Clear"
                 android:layout_weight="1"
