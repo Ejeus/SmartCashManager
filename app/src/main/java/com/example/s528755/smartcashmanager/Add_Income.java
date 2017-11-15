@@ -4,6 +4,7 @@ import android.app.DatePickerDialog;
 import android.app.Fragment;
 import android.app.TimePickerDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -33,7 +34,7 @@ public class Add_Income extends Fragment {
     TextView hsrc,hamt,htype;
     EditText source,amount,type;
     TextView date,time;
-    Button save,clear;
+    Button save,clear,image;
     SharedPreferences sp;
     String uid;
     SimpleDateFormat sdfd=new SimpleDateFormat("yyyy/MM/dd");
@@ -58,6 +59,7 @@ public class Add_Income extends Fragment {
         time= (TextView) v.findViewById(R.id.itime);
         save= (Button) v.findViewById(R.id.isave);
         clear= (Button) v.findViewById(R.id.iclear);
+        image = (Button) v.findViewById(R.id.incomePhoto);
         ray= (RelativeLayout) v.findViewById(R.id.addray);
         hsrc= (TextView) v.findViewById(R.id.isrc_h);
         hamt= (TextView) v.findViewById(R.id.iamt_h);
@@ -296,6 +298,15 @@ public class Add_Income extends Fragment {
             @Override
             public void onClick(View v) {
                 timed.show();
+            }
+        });
+
+
+        image.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(v.getContext(), Add_Image.class);
+                startActivity(i);
             }
         });
 

@@ -5,6 +5,7 @@ import android.app.Fragment;
 import android.app.TimePickerDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -35,7 +36,7 @@ public class Add_Expense extends Fragment {
     TextView hsrc,hamt,htype;
     EditText source,amount,type;
     TextView date,time,balance;
-    Button save,clear;
+    Button save,clear,image;
     int bal=0;
     SharedPreferences sp;
     String uid;
@@ -56,13 +57,13 @@ public class Add_Expense extends Fragment {
         uid=sp.getString("uid","");
         source= (EditText) v.findViewById(R.id.esrc);
         amount= (EditText) v.findViewById(R.id.eamt);
+        image = (Button) v.findViewById(R.id.expensePhoto);
         type= (EditText) v.findViewById(R.id.etype);
         date= (TextView) v.findViewById(R.id.edate);
         time= (TextView) v.findViewById(R.id.etime);
         balance= (TextView) v.findViewById(R.id.ebal);
         save= (Button) v.findViewById(R.id.esave);
         clear= (Button) v.findViewById(R.id.eclear);
-        Button image = (Button) v.findViewById(R.id.addimage);
         ray= (RelativeLayout) v.findViewById(R.id.adderay);
         hsrc= (TextView) v.findViewById(R.id.esrc_h);
         hamt= (TextView) v.findViewById(R.id.eamt_h);
@@ -176,6 +177,26 @@ public class Add_Expense extends Fragment {
                 clear();
             }
         });
+
+
+
+
+
+//Image
+        image.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(v.getContext(), Add_Image.class);
+                startActivity(i);
+            }
+        });
+
+
+
+
+
+
+
 
         save.setOnTouchListener(new View.OnTouchListener() {
             @Override
@@ -303,6 +324,8 @@ public class Add_Expense extends Fragment {
                 dated.show();
             }
         });
+
+
 
         time.setOnClickListener(new View.OnClickListener() {
             @Override
