@@ -146,7 +146,7 @@ public class Add_Image extends Activity {
         startActivity(i);
     }
 
-    
+
     private void onSelectFromGalleryResult(Intent data) {
 
         Bitmap bm=null;
