@@ -17,6 +17,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -45,7 +46,7 @@ public class Add_Image extends Activity {
                 selectImage();
             }
         });
-//        ivImage = (ImageView) findViewById(R.id.ivImage);
+       ivImage = (ImageView) findViewById(R.id.ivImage);
     }
 
     @Override
@@ -140,9 +141,12 @@ public class Add_Image extends Activity {
         }
 
         ivImage.setImageBitmap(thumbnail);
+        Toast.makeText(getApplicationContext(), "Added image", Toast.LENGTH_LONG).show();
+        Intent i = new Intent(this, Add_Image.class);
+        startActivity(i);
     }
 
-    @SuppressWarnings("deprecation")
+    
     private void onSelectFromGalleryResult(Intent data) {
 
         Bitmap bm=null;
@@ -155,6 +159,9 @@ public class Add_Image extends Activity {
         }
 
         ivImage.setImageBitmap(bm);
+        Toast.makeText(getApplicationContext(), "Image added from Gallery", Toast.LENGTH_LONG).show();
+        Intent i = new Intent(this, Add_Image.class);
+        startActivity(i);
     }
 
 }
