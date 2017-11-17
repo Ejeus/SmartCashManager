@@ -22,7 +22,7 @@
                 android:layout_height="wrap_content">
 
                 <TextView
-                    android:textColor="@color/darkbrown"
+                    android:textColor="@color/darkviolet"
                     android:typeface="serif"
                     android:textSize="30dp"
                     android:layout_marginTop="10dp"
@@ -67,7 +67,7 @@
                         android:gravity="center"
                         android:text="Savings"
                         android:textAppearance="?android:attr/textAppearanceMedium"
-                        android:textColor="@color/lightbrown"
+                        android:textColor="@color/lightviolet"
                         android:textStyle="bold" />
 
                     <TextView
@@ -122,7 +122,7 @@
                         android:gravity="center"
                         android:text="Incomes"
                         android:textAppearance="?android:attr/textAppearanceMedium"
-                        android:textColor="@color/lightbrown"
+                        android:textColor="@color/lightviolet"
                         android:textStyle="bold" />
 
                     <TextView
@@ -177,7 +177,7 @@
                         android:gravity="center"
                         android:text="Expenses"
                         android:textAppearance="?android:attr/textAppearanceMedium"
-                        android:textColor="@color/lightbrown"
+                        android:textColor="@color/lightviolet"
                         android:textStyle="bold" />
 
                     <TextView

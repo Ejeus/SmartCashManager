@@ -151,7 +151,7 @@ public class Register extends AppCompatActivity {
                         break;
                     case MotionEvent.ACTION_UP:
                         submit.setBackgroundResource(R.drawable.edittext_back);
-                        submit.setTextColor(getResources().getColor(R.color.darkbrown));
+                        submit.setTextColor(getResources().getColor(R.color.darkviolet));
                         break;
                 }
                 return false;

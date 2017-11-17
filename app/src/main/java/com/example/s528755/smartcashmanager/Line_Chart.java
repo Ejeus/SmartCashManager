@@ -261,7 +261,7 @@ public class Line_Chart extends Fragment {
             XAxis xAxis = Linechart.getXAxis();
             xAxis.setPosition(XAxis.XAxisPosition.BOTTOM);
             xAxis.setGranularity(1f);
-            xAxis.setTextColor(getResources().getColor(R.color.darkbrown));
+            xAxis.setTextColor(getResources().getColor(R.color.darkviolet));
             xAxis.setGridColor(Color.TRANSPARENT);
             xAxis.setValueFormatter(formatter);
             xAxis.setAvoidFirstLastClipping(true);

@@ -16,7 +16,7 @@
             android:layout_height="wrap_content">
 
             <TextView
-                android:textColor="@color/darkbrown"
+                android:textColor="@color/darkviolet"
                 android:paddingTop="5dp"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_marginRight="10dp"

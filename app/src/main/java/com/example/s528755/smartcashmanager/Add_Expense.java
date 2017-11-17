@@ -164,7 +164,7 @@ public class Add_Expense extends Fragment {
                         break;
                     case MotionEvent.ACTION_UP:
                         clear.setBackgroundResource(R.drawable.edittext_back);
-                        clear.setTextColor(getResources().getColor(R.color.darkbrown));
+                        clear.setTextColor(getResources().getColor(R.color.darkviolet));
                         break;
                 }
                 return false;
@@ -212,7 +212,7 @@ public class Add_Expense extends Fragment {
                         break;
                     case MotionEvent.ACTION_UP:
                         save.setBackgroundResource(R.drawable.edittext_back);
-                        save.setTextColor(getResources().getColor(R.color.darkbrown));
+                        save.setTextColor(getResources().getColor(R.color.darkviolet));
                         break;
                 }
                 return false;

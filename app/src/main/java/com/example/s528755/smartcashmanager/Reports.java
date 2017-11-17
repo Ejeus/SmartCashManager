@@ -101,7 +101,7 @@ public class Reports extends Fragment{
                         break;
                     case MotionEvent.ACTION_UP:
                         selectdate.setBackgroundResource(R.drawable.edittext_back);
-                        selectdate.setTextColor(getResources().getColor(R.color.darkbrown));
+                        selectdate.setTextColor(getResources().getColor(R.color.darkviolet));
                         break;
                 }
                 return false;
@@ -162,7 +162,7 @@ public class Reports extends Fragment{
                         break;
                     case MotionEvent.ACTION_UP:
                         submit.setBackgroundResource(R.drawable.edittext_back);
-                        submit.setTextColor(getResources().getColor(R.color.darkbrown));
+                        submit.setTextColor(getResources().getColor(R.color.darkviolet));
                         break;
                 }
                 return false;

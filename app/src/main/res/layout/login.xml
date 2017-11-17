@@ -11,7 +11,7 @@
         android:id="@+id/tableRow">
 
         <TextView
-            android:textColor="@color/darkbrown"
+            android:textColor="@color/darkviolet"
             android:typeface="serif"
             android:textSize="35dp"
             android:gravity="center"
@@ -32,7 +32,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
             <android.support.design.widget.TextInputLayout
-                android:textColorHint="@color/lightbrown"
+                android:textColorHint="@color/lightviolet"
                 android:id="@+id/uidlay"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -57,7 +57,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
             <android.support.design.widget.TextInputLayout
-                android:textColorHint="@color/lightbrown"
+                android:textColorHint="@color/lightviolet"
                 android:id="@+id/passlay"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
