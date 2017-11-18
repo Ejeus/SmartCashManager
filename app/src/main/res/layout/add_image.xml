@@ -40,32 +40,32 @@
         android:layout_marginLeft="40dp"
         />
 
-    <Button
-        android:textSize="20dp"
-        android:textColor="@color/darkviolet"
-        android:background="@drawable/edittext_back"
-        android:layout_marginRight="10dp"
-        android:text="Save"
-        android:layout_weight="1"
-        android:layout_width="150dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginBottom="40dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/imagesave"
-        android:layout_alignParentBottom="true"/>
+    <!--<Button-->
+        <!--android:textSize="20dp"-->
+        <!--android:textColor="@color/darkviolet"-->
+        <!--android:background="@drawable/edittext_back"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:text="Save"-->
+        <!--android:layout_weight="1"-->
+        <!--android:layout_width="150dp"-->
+        <!--android:layout_marginLeft="30dp"-->
+        <!--android:layout_marginBottom="40dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/imagesave"-->
+        <!--android:layout_alignParentBottom="true"/>-->
 
-    <Button
-        android:textSize="20dp"
-        android:textColor="@color/darkviolet"
-        android:background="@drawable/edittext_back"
-        android:text="Clear"
-        android:layout_weight="1"
-        android:layout_width="150dp"
-        android:layout_marginBottom="40dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageclear"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="30dp"
-        android:layout_alignParentBottom="true"/>
+    <!--<Button-->
+        <!--android:textSize="20dp"-->
+        <!--android:textColor="@color/darkviolet"-->
+        <!--android:background="@drawable/edittext_back"-->
+        <!--android:text="Clear"-->
+        <!--android:layout_weight="1"-->
+        <!--android:layout_width="150dp"-->
+        <!--android:layout_marginBottom="40dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/imageclear"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_marginRight="30dp"-->
+        <!--android:layout_alignParentBottom="true"/>-->
 
 </RelativeLayout>

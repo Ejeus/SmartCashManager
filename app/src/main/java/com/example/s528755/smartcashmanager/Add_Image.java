@@ -142,8 +142,8 @@ public class Add_Image extends Activity {
 
         ivImage.setImageBitmap(thumbnail);
         Toast.makeText(getApplicationContext(), "Added image", Toast.LENGTH_LONG).show();
-        Intent i = new Intent(this, Add_Image.class);
-        startActivity(i);
+//        Intent i = new Intent(this, Add_Image.class);
+//        startActivity(i);
     }
 
 
@@ -160,8 +160,8 @@ public class Add_Image extends Activity {
 
         ivImage.setImageBitmap(bm);
         Toast.makeText(getApplicationContext(), "Image added from Gallery", Toast.LENGTH_LONG).show();
-        Intent i = new Intent(this, Add_Image.class);
-        startActivity(i);
+//        Intent i = new Intent(this, Add_Image.class);
+//        startActivity(i);
     }
 
 }

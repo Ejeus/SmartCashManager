@@ -224,9 +224,9 @@
 
                 <Button
                     android:id="@+id/expensePhoto"
-                    android:layout_width="100dp"
+                    android:layout_width="130dp"
                     android:textSize="20dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="70dp"
                     android:onClick="images"
                     android:text="Select Photo"
                     android:background="@drawable/edittext_back"

@@ -196,7 +196,7 @@
 
                 <Button
                     android:id="@+id/incomePhoto"
-                    android:layout_width="181dp"
+                    android:layout_width="160dp"
                     android:layout_height="wrap_content"
                     android:text="Select Photo"
                     android:textColor="@color/darkviolet"

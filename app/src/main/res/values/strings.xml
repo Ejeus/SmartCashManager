@@ -24,7 +24,7 @@
         <item>@drawable/income</item>
         <item>@drawable/list</item>
         <item>@drawable/expense</item>
-        <item>@drawable/sepcial</item>
+        <item>@drawable/special</item>
         <item>@drawable/graph</item>
         <item>@drawable/logout</item>
     </array>
