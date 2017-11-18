@@ -63,8 +63,3 @@ Jyothsna Pala - Has mainly implemented functionalities in add expenses, retrievi
 Kamal Nadh Meduri - Has mainly implemented the Reports page functionalities, Worked on the user interface, Worked on home page fragment, kept his ideas towards connecting the application to the internal storage.
 
 Prathibha Kamani - Has implemented the login and register functionalities using internal stored data with shared preferences with SQLLite, also enchanced the user interface with attractive design with proper actionBar.
-
-
-TroubleShooting:
-
-We are facing problems in retriving the image in the listview of income and expenses fragemnet.
