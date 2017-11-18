@@ -2,15 +2,14 @@
 
 This README would normally document whatever steps are necessary to get your application up and running.
 
-                                   Project Application - Smart Cah Manager
+                                   Project Application - Smart Cash Manager
 
 Project Name: Smart Cash Manager
 
-Project Team Members: Sandeep Mulakala S528752
-		              Prathibha Kamani S528804
-		              KamalNadh Meduri S528747	
-		              Jyothsna Pala    S528755
+Project Team Members: Sandeep Mulakala S528752,Prathibha Kamani S528804, Venkata Naga Kamal Nadh Meduri S528747, Jyothsna Pala S528755
 
+		              
+		        
 What is this project all about?
 
 In this project we are developing an application in which it will allow users to maintain a digital automated diary for expenses. User will login or sign up (for new user) to use this application. Once user has logged in with their credentials they can track their income and expense on a day to day basis.
