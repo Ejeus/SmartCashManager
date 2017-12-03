@@ -31,6 +31,8 @@ public class Add_Image extends Activity {
 
     private int REQUEST_CAMERA = 0, SELECT_FILE = 1;
     private Button btnSelect;
+    private Button confirm;
+    private Button cancel;
     private ImageView ivImage;
     private String userChoosenTask;
 
@@ -47,6 +49,22 @@ public class Add_Image extends Activity {
             }
         });
        ivImage = (ImageView) findViewById(R.id.ivImage);
+        confirm = (Button) findViewById(R.id.Confirm);
+        cancel = (Button) findViewById(R.id.Cancel);
+        confirm.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i=new Intent(v.getContext(),Add_Expense.class);
+                startActivity(i);
+            }
+        });
+        cancel.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "Canceled selected image", Toast.LENGTH_SHORT).show();
+            }
+        });
+
     }
 
     @Override
