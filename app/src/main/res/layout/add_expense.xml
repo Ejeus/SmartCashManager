@@ -28,7 +28,7 @@
                     android:id="@+id/esrc_h"
                     android:textColor="@color/lightviolet"
                     android:layout_marginLeft="5dp"
-                    android:text="Source of Income"
+                    android:text="Source of Expense"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
 
@@ -98,7 +98,7 @@
                     android:id="@+id/etype_h"
                     android:textColor="@color/lightviolet"
                     android:layout_marginLeft="5dp"
-                    android:text="Mode of Income"
+                    android:text="Mode of Expense"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
 

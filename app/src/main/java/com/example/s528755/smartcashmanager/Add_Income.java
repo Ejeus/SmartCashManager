@@ -381,29 +381,8 @@ public class Add_Income extends Fragment {
                 Calendar newDate = Calendar.getInstance();
                 newDate.set(year, monthOfYear, dayOfMonth);
                 String dd = sdfd.format(newDate.getTime());
-                if(tdyear==year)
-                {
-                    if(tdmonth==(monthOfYear+1))
-                    {
+
                         date.setText(dd);
-                    }
-                    else
-                    {
-                        Snackbar snack=Snackbar.make(ray,"You can only Select dates of the Current month!",Snackbar.LENGTH_SHORT);
-                        View vs=snack.getView();
-                        TextView txt= (TextView) vs.findViewById(android.support.design.R.id.snackbar_text);
-                        txt.setTextColor(Color.RED);
-                        snack.show();
-                    }
-                }
-                else
-                {
-                    Snackbar snack=Snackbar.make(ray,"Its not the Current Year!",Snackbar.LENGTH_SHORT);
-                    View vs=snack.getView();
-                    TextView txt= (TextView) vs.findViewById(android.support.design.R.id.snackbar_text);
-                    txt.setTextColor(Color.RED);
-                    snack.show();
-                }
 
             }
 
