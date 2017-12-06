@@ -33,7 +33,7 @@ import java.util.Date;
 public class Add_Income extends Fragment {
     TextView hsrc,hamt,htype;
     EditText source,amount,type;
-    TextView date,time;
+    TextView date,time,iin;
     Button save,clear,image;
     SharedPreferences sp;
     String uid;
@@ -57,6 +57,7 @@ public class Add_Income extends Fragment {
         type= (EditText) v.findViewById(R.id.itype);
         date= (TextView) v.findViewById(R.id.idate);
         time= (TextView) v.findViewById(R.id.itime);
+        iin= (TextView) v.findViewById(R.id.iin);
         save= (Button) v.findViewById(R.id.isave);
         clear= (Button) v.findViewById(R.id.iclear);
         image = (Button) v.findViewById(R.id.incomePhoto);
@@ -305,8 +306,10 @@ public class Add_Income extends Fragment {
         image.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 Intent i = new Intent(v.getContext(), Add_Image.class);
                 startActivity(i);
+                iin.setText("image.jpg");
             }
         });
 

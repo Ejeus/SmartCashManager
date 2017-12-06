@@ -54,8 +54,11 @@ public class Add_Image extends Activity {
         confirm.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i=new Intent(v.getContext(),Add_Expense.class);
-                startActivity(i);
+                Intent intent = new Intent(getApplicationContext(), Add_Expense.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
+                finish();
             }
         });
         cancel.setOnClickListener(new OnClickListener() {

@@ -170,30 +170,6 @@
                     android:background="@drawable/edittext_back"
                     android:padding="5dp"
                     android:textAppearance="?android:attr/textAppearanceMedium" />
-
-                <!--<TextView-->
-                    <!--android:id="@+id/eamt_h"-->
-                    <!--android:textColor="@color/lightviolet"-->
-                    <!--android:layout_marginLeft="5dp"-->
-                    <!--android:text="Amount"-->
-                    <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="wrap_content" />-->
-                <!--<Button-->
-                    <!--android:textSize="20dp"-->
-                    <!--android:textColor="@color/darkviolet"-->
-                    <!--android:background="@drawable/edittext_back"-->
-                    <!--android:text="Add Image"-->
-
-                    <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_marginLeft="5dp"-->
-                    <!--android:text="Amount"-->
-                    <!--android:textColor="@color/lightbrown"-->
-                    <!--android:visibility="invisible" />-->
-
-
-
-
                 <Button
                     android:id="@+id/incomePhoto"
                     android:layout_width="160dp"
@@ -202,12 +178,22 @@
                     android:textColor="@color/darkviolet"
                     android:background="@drawable/edittext_back"
                     android:layout_marginTop="10dp"/>
+                <TextView
+                    android:padding="1dp"
+                    android:background="@drawable/edittext_back"
+                    android:id="@+id/iin"
+                    android:layout_marginTop="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
             </LinearLayout>
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:orientation="vertical">
+                android:orientation="horizontal">
+
 
             </LinearLayout>
         </TableRow>

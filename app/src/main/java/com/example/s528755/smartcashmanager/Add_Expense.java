@@ -35,7 +35,7 @@ import java.util.Date;
 public class Add_Expense extends Fragment {
     TextView hsrc,hamt,htype;
     EditText source,amount,type;
-    TextView date,time,balance;
+    TextView date,time,balance,ein;
     Button save,clear,image;
     int bal=0;
     SharedPreferences sp;
@@ -62,6 +62,7 @@ public class Add_Expense extends Fragment {
         date= (TextView) v.findViewById(R.id.edate);
         time= (TextView) v.findViewById(R.id.etime);
         balance= (TextView) v.findViewById(R.id.ebal);
+        ein= (TextView) v.findViewById(R.id.ein);
         save= (Button) v.findViewById(R.id.esave);
         clear= (Button) v.findViewById(R.id.eclear);
         ray= (RelativeLayout) v.findViewById(R.id.adderay);
@@ -186,8 +187,11 @@ public class Add_Expense extends Fragment {
         image.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                ein.setText("image1.jpg");
                 Intent i = new Intent(v.getContext(), Add_Image.class);
+
                 startActivity(i);
+
             }
         });
 
@@ -403,7 +407,7 @@ public class Add_Expense extends Fragment {
         db.open();
         String ans=db.getbal(uid);
         db.close();
-        String s = "&#36;" + " "+ans;
+        String s = "Remaining Balance"+"&#36;" + " "+ans;
         bal=Integer.parseInt(ans);
         balance.setText(Html.fromHtml(s));
     }
