@@ -434,7 +434,7 @@ public class Add_Income extends Fragment {
     public  void onActivityResult(int reqCode, int resultCode, Intent data) {
         super.onActivityResult(reqCode, resultCode, data);
         incomeimagename.setVisibility(View.VISIBLE);
-        incomeimagename.setText("78213.."+".jpg");
+        incomeimagename.setText("20171201_1.."+".jpg");
 
     }
 }
