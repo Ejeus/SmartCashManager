@@ -1,13 +1,16 @@
 package com.example.s528755.smartcashmanager;
 
+import android.app.AlertDialog;
 import android.app.DatePickerDialog;
 import android.app.Fragment;
 import android.app.TimePickerDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.support.annotation.Nullable;
 import android.support.design.widget.Snackbar;
 import android.text.Editable;
@@ -19,6 +22,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.TimePicker;
@@ -33,7 +37,7 @@ import java.util.Date;
 public class Add_Income extends Fragment {
     TextView hsrc,hamt,htype;
     EditText source,amount,type;
-    TextView date,time,iin;
+    TextView date,time,incomeimagename;
     Button save,clear,image;
     SharedPreferences sp;
     String uid;
@@ -57,11 +61,11 @@ public class Add_Income extends Fragment {
         type= (EditText) v.findViewById(R.id.itype);
         date= (TextView) v.findViewById(R.id.idate);
         time= (TextView) v.findViewById(R.id.itime);
-        iin= (TextView) v.findViewById(R.id.iin);
         save= (Button) v.findViewById(R.id.isave);
         clear= (Button) v.findViewById(R.id.iclear);
         image = (Button) v.findViewById(R.id.incomePhoto);
         ray= (RelativeLayout) v.findViewById(R.id.addray);
+        incomeimagename=(TextView) v.findViewById(R.id.incomeimagename);
         hsrc= (TextView) v.findViewById(R.id.isrc_h);
         hamt= (TextView) v.findViewById(R.id.iamt_h);
         htype= (TextView) v.findViewById(R.id.itype_h);
@@ -303,15 +307,72 @@ public class Add_Income extends Fragment {
         });
 
 
+//        image.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//
+//                Intent i = new Intent(v.getContext(), Add_Image.class);
+//                startActivity(i);
+//                iin.setText("image.jpg");
+//            }
+//        });
+
         image.setOnClickListener(new View.OnClickListener() {
+
+            private int REQUEST_CAMERA = 0, SELECT_FILE = 1;
+            private Button btnSelect;
+            private Button confirm;
+            private Button cancel;
+            private ImageView ivImage;
+            private String userChoosenTask;
+            private int mark = 0;
+
             @Override
             public void onClick(View v) {
 
-                Intent i = new Intent(v.getContext(), Add_Image.class);
-                startActivity(i);
-                iin.setText("image.jpg");
+                final CharSequence[] items = {"Take Photo", "Choose from Library",
+                        "Cancel"};
+
+                AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                builder.setTitle("Add Photo!");
+                builder.setItems(items, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int item) {
+                        boolean result = Utility.checkPermission(getActivity());
+
+                        if (items[item].equals("Take Photo")) {
+                            userChoosenTask = "Take Photo";
+                            if (result) {
+                                Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                                startActivityForResult(intent, REQUEST_CAMERA);
+
+                            }
+
+                        } else if (items[item].equals("Choose from Library")) {
+                            userChoosenTask = "Choose from Library";
+                            if (result) {
+                                Intent intent = new Intent();
+                                intent.setType("image/*");
+                                intent.setAction(Intent.ACTION_GET_CONTENT);//
+                                startActivityForResult(Intent.createChooser(intent, "Select File"), SELECT_FILE);
+
+                            }
+
+                        } else if (items[item].equals("Cancel")) {
+                            dialog.dismiss();
+                        }
+                    }
+                });
+                builder.show();
+
+
             }
+
+
         });
+
+
+
 
         Calendar newCalendar = Calendar.getInstance();
         dated = new DatePickerDialog(getActivity(), new DatePickerDialog.OnDateSetListener()
@@ -367,6 +428,13 @@ public class Add_Income extends Fragment {
         d=new Date();
         date.setText(sdfd.format(d.getTime()));
         time.setText(sdft.format(d.getTime()));
+
+    }
+    @Override
+    public  void onActivityResult(int reqCode, int resultCode, Intent data) {
+        super.onActivityResult(reqCode, resultCode, data);
+        incomeimagename.setVisibility(View.VISIBLE);
+        incomeimagename.setText("78213.."+".jpg");
 
     }
 }

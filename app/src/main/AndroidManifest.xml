@@ -35,12 +35,6 @@
             android:name=".Register"
             android:theme="@style/AppTheme"></activity>
 
-        <activity
-            android:name=".Add_Image"
-            android:theme="@style/AppTheme"></activity>
-
-
-
 
     </application>
 

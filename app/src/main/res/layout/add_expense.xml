@@ -217,16 +217,14 @@
                     android:textSize="20dp"
                     />
                 <TextView
-                    android:padding="1dp"
-                    android:background="@drawable/edittext_back"
-                    android:id="@+id/ein"
-                    android:layout_marginTop="5dp"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/expenseimagename"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-
-
-
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext_back"
+                    android:padding="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="8sp" />
 
 
             </LinearLayout>
