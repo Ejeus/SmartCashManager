@@ -169,7 +169,7 @@
                 <TextView
                     android:id="@+id/etime"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="42dp"
                     android:layout_marginTop="5dp"
                     android:background="@drawable/edittext_back"
                     android:padding="1dp"
@@ -180,12 +180,13 @@
                 <TextView
                     android:id="@+id/ebal"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="34dp"
                     android:layout_marginTop="5dp"
                     android:background="@drawable/edittext_back"
                     android:padding="1dp"
                     android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:textColor="@android:color/white" />
+                    android:textColor="@android:color/black"
+                    />
 
 
 
@@ -200,11 +201,12 @@
             android:layout_height="match_parent" >
 
             <LinearLayout
-                android:orientation="horizontal"
                 android:layout_width="0dp"
-                android:layout_weight="1"
                 android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
                 android:weightSum="1">
+
                 <Button
                     android:id="@+id/expensePhoto"
                     android:layout_width="101dp"
@@ -214,17 +216,18 @@
                     android:paddingTop="15dp"
                     android:text="Select Photo"
                     android:textColor="@color/darkviolet"
-                    android:textSize="20dp"
-                    />
+                    android:textSize="20dp" />
+
                 <TextView
                     android:id="@+id/expenseimagename"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="30dp"
                     android:layout_marginTop="5dp"
                     android:background="@drawable/edittext_back"
                     android:padding="5dp"
                     android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:textSize="8sp" />
+                    android:textSize="8sp"
+                    android:layout_weight="0.43" />
 
 
             </LinearLayout>
